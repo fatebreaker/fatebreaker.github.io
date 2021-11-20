@@ -67,5 +67,5 @@ __Third prize in the national high school students at Information technology sub
 - [Thien Huu Nguyen](http://ix.cs.uoregon.edu/~thien)
 
 # Supervisors
-- [Dat Quoc Nguyen] (https://datquocnguyen.github.io)
-- [Tin Vo] (https://duytinvo.github.io)
+- [Dat Quoc Nguyen](https://datquocnguyen.github.io)
+- [Tin Vo](https://duytinvo.github.io)
