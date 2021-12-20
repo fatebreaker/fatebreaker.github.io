@@ -31,15 +31,15 @@ __<span> {{ milestone_arr[0] | strip }} </span>__ : *{{ milestone_arr[1] | strip
 {% 
 assign publications = "
 
+Exploiting Document Structures and Cluster Consistencies for Event Coreference Resolution |
+__Hieu Minh Tran*__, Duy Phung, Thien Huu Nguyen |
+*Proceedings of ACL-IJCNLP 2021 (oral)* |
+pdfs/ACL_2021.pdf
+---
 The Dots Have Their Values: Exploiting the Node-Edge Connections in Graph-based Neural Models for Document-level Relation Extraction |
 __Hieu Minh Tran*__, Minh, Minh Trung Nguyen, Thien Huu Nguyen |
 *Proceedings of EMNLP 2020 (Findings)* |
 pdfs/EMNLP_2020.pdf
----
-Exploiting Document Structures and Cluster Consistencies for Event Coreference Resolution |
-__Hieu Minh Tran*__, Duy Phung, Thien Huu Nguyen |
-*Proceedings of ACL-IJCNLP 2021* |
-pdfs/ACL_2021.pdf
 ---
 Learning Cross-lingual Representations for Event Coreference Resolution
 with Multi-view Alignment and Optimal Transport |
