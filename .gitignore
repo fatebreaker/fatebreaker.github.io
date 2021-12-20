@@ -10,3 +10,4 @@ package.json
 *.gem
 *.gemspec
 .jekyll-cache
+open_proxy.sh

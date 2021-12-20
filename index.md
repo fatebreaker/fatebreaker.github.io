@@ -63,9 +63,9 @@ __<span style='font-size: 20px'> {{ pub_arr[0] | strip }} </span>__ <br> *{{ pub
 
 __Third prize in the national high school students at Information technology subject in 12th grade, 2014__ <br>
 
-# Mentor
+# Mentors
 - [Thien Huu Nguyen](http://ix.cs.uoregon.edu/~thien)
 
-# Supervisors
+# Advisors
 - [Dat Quoc Nguyen](https://datquocnguyen.github.io)
 - [Tin Vo](https://duytinvo.github.io)
