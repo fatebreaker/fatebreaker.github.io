@@ -100,10 +100,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-include: ['_pages']
+include: ['_pages', 'blog']
 
-paginate: 6
-paginate_path: /page:num/
+paginate: 10
+paginate_path: "/blog/page:num/"
 
 # Exclude these files from your production _site
 exclude:
