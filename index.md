@@ -3,14 +3,16 @@ layout: default
 usemathjax: true
 ---
 
-I am an AI resident at VinAI Research Vietnam. 
+I'm currently a Computer Science PhD student at University of Massachusetts Amherst, where I do research on Natural Language Processing. Previously, I worked as an AI resident at VinAI Research Vietnam. 
 I obtained my B.S. degree in Computer Science from Hanoi University of Science and Technology. 
 My research explores mechanisms to understand human languages for computers so that computers can perform cognitive language-related tasks for us. Among others, I am especially interested in distilling structured information and mining useful knowledge from massive human-written text of various domains. I am also interested in other language-related problems with deep learning, including reading comprehension, question answering, machine translation, and natural language generation.
 # Biography
 
 {% 
 assign biography = "
-Nov. 2019 – Present | Research Resident at VinAI Research
+Aug. 2022 – Aug. 2027 | Computer Science PhD student at University of Massachusetts Amherst
+---
+Nov. 2019 – Jun. 2022 | Research Resident at VinAI Research
 ---
 Jun. 2018 – Oct. 2019 | Software developer at VC Corporation
 ---
@@ -63,9 +65,5 @@ __<span style='font-size: 20px'> {{ pub_arr[0] | strip }} </span>__ <br> *{{ pub
 
 __Third prize in the national high school students at Information technology subject in 12th grade, 2014__ <br>
 
-# Mentors
-- [Thien Huu Nguyen](http://ix.cs.uoregon.edu/~thien)
-
-# Advisors
-- [Dat Quoc Nguyen](https://datquocnguyen.github.io)
-- [Tin Vo](https://duytinvo.github.io)
+# Advisor
+- [Hong Yu](https://www.cics.umass.edu/faculty/directory/hong_yu)

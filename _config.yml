@@ -6,7 +6,7 @@
 name: Hieu Tran
 
 # Name of the author
-author: hieuvodoi
+author: hieutran
 author-info:
   google_scholar:
     icon: fas fa-graduation-cap
@@ -22,7 +22,7 @@ author-info:
     url: pdfs/CV.pdf
 
 # Short bio or description (displayed in the header)
-description: Research Resident at VinAI Research
+description: Computer Science PhD Student at UMass Amherst
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars.githubusercontent.com/hieuvodoi
@@ -37,12 +37,12 @@ footer-links:
   email: michael.tranhieu@gmail.com
   facebook:
   flickr:
-  github: hieuvodoi
+  github: hieutran81
   instagram:
   linkedin:
   pinterest:
   rss: rss
-  twitter: hieuvodoi3
+  twitter: hieutm_81
   stackoverflow:
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -61,8 +61,8 @@ google_analytics:
 
 # Your website URL (e.g. http://amitmerchant1990.github.io or http://www.amitmerchant.com)
 # Used for Sitemap.xml and your RSS feed
-url: http://hieuvodoi.github.io
-enforce_ssl: http://hieuvodoi.github.io
+url: http://hieutran81.github.io
+enforce_ssl: http://hieutran81.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
