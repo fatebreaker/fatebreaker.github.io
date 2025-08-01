@@ -5,8 +5,11 @@ mathjax: true
 
 I'm currently a Computer Science PhD student at the University of Massachusetts Amherst, where I research Natural Language Processing. Previously, I worked as an AI resident at VinAI Research Vietnam.  
 I obtained my B.S. degree in Computer Science from Hanoi University of Science and Technology.  
-My primary research interest is enabling LLMs to understand, generate, and reason about human language to enhance their ability to perform complex cognitive and language-related tasks. Recently, I have expanded my work to advanced topics such as Preference-based Learning, Retrieval-Augmented Generation (RAG), and Test Time Computing, with a particular emphasis on improving the reasoning capabilities, factual accuracy, and efficiency of language models in both general and domain-specific applications.
-
+My primary research interest is enabling LLMs to understand, generate, and reason about human language to enhance
+their ability to perform complex cognitive and language-related tasks. Recently, I have expanded my work to advanced
+topics such as Reinforcement Learning and Test Time Computing, with a particular emphasis on improving the
+reasoning capabilities, factual accuracy, and efficiency of language models in both general and domain-specific
+applications.
 ---
 
 # Biography
@@ -37,8 +40,8 @@ __<span>{{ milestone_arr[0] | strip }}</span>__ : *{{ milestone_arr[1] | strip }
 {% assign publications = "
 RARE: Retrieval-Augmented Reasoning Enhancement for Large Language Models |
 __Hieu Tran*__, Zonghai Yao, Junda Wang, Yifan Zhang, Zhichao Yang, Hong Yu |
-*Under review* |
-pdfs/LEAF.pdf
+*Proceedings of ACL 2025* |
+pdfs/RARE.pdf
 ---
 SemiHVision: Enhancing Medical Multimodal Models with a Semi-Human Annotated Dataset and Fine-Tuned Instruction Generation |
 Junda Wang, Yujan Ting, Eric Z. Chen, __Hieu Tran*__, Hong Yu, Weijing Huang, Terrence Chen |
