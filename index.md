@@ -40,7 +40,7 @@ __<span>{{ milestone_arr[0] | strip }}</span>__ : *{{ milestone_arr[1] | strip }
 
 {% assign publications = "
 Chatbot To Help Patients Understand Their Health |
-Won Seok Jang*, __Hieu Tran*__, Manav Mistry, SaiKiran Gandluri, Yifan Zhang, Sharmin Sultana, Sunjae Kwon,
+Won Seok Jang*, Hieu Tran*, Manav Mistry, SaiKiran Gandluri, Yifan Zhang, Sharmin Sultana, Sunjae Kwon,
 Zonghai Yao, Hong Yu |
 *Proceedings of EMNLP 2024 (Findings)* |
 pdfs/chatbot.pdf
