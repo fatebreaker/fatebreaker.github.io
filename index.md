@@ -36,13 +36,6 @@ __<span>{{ milestone_arr[0] | strip }}</span>__ : *{{ milestone_arr[1] | strip }
 ---
 
 
-[//]: # (SemiHVision: Enhancing Medical Multimodal Models with a Semi-Human Annotated Dataset and Fine-Tuned Instruction Generation |)
-
-[//]: # (Junda Wang, Yujan Ting, Eric Z. Chen, __Hieu Tran*__, Hong Yu, Weijing Huang, Terrence Chen |)
-
-[//]: # (*Under review* |)
-
-[//]: # (pdfs/Semi.pdf)
 # Publications
 
 {% assign publications = "
