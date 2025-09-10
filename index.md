@@ -35,23 +35,27 @@ __<span>{{ milestone_arr[0] | strip }}</span>__ : *{{ milestone_arr[1] | strip }
 
 ---
 
+
+[//]: # (SemiHVision: Enhancing Medical Multimodal Models with a Semi-Human Annotated Dataset and Fine-Tuned Instruction Generation |)
+
+[//]: # (Junda Wang, Yujan Ting, Eric Z. Chen, __Hieu Tran*__, Hong Yu, Weijing Huang, Terrence Chen |)
+
+[//]: # (*Under review* |)
+
+[//]: # (pdfs/Semi.pdf)
 # Publications
 
 {% assign publications = "
+Chatbot To Help Patients Understand Their Health |
+Won Seok Jang*, __Hieu Tran*__, Manav Mistry, SaiKiran Gandluri, Yifan Zhang, Sharmin Sultana, Sunjae Kwon,
+Zonghai Yao, Hong Yu |
+*Proceedings of EMNLP 2024 (Findings)* |
+pdfs/chatbot.pdf
+---
 RARE: Retrieval-Augmented Reasoning Enhancement for Large Language Models |
 __Hieu Tran*__, Zonghai Yao, Junda Wang, Yifan Zhang, Zhichao Yang, Hong Yu |
 *Proceedings of ACL 2025* |
 pdfs/RARE.pdf
----
-SemiHVision: Enhancing Medical Multimodal Models with a Semi-Human Annotated Dataset and Fine-Tuned Instruction Generation |
-Junda Wang, Yujan Ting, Eric Z. Chen, __Hieu Tran*__, Hong Yu, Weijing Huang, Terrence Chen |
-*Under review* |
-pdfs/Semi.pdf
----
-LEAF: Learning and Evaluation Augmented by Fact-Checking to Improve Factualness in Large Language Models |
-__Hieu Tran*__, Junda Wang, Yujan Ting, Weijing Huang, Terrence Chen |
-*Under review* |
-pdfs/LEAF.pdf
 ---
 BioInstruct: Instruction Tuning of Large Language Models for Biomedical Natural Language Processing |
 __Hieu Tran*__, Zhichao Yang, Zonghai Yao, Hong Yu |
@@ -59,7 +63,7 @@ __Hieu Tran*__, Zhichao Yang, Zonghai Yao, Hong Yu |
 pdfs/BioInstruct.pdf
 ---
 Readme: Bridging medical jargon and lay understanding for patient education through data-centric NLP |
-Zonghai Yao, Nandyala Siddharth Kantu, Guanghao Wei, __Hieu Tran*__, Zhangqi Duan, Sunjae Kwon, Zhichao Yang, Hong Yu |
+Zonghai Yao, Nandyala Siddharth Kantu, Guanghao Wei, __Hieu Tran__, Zhangqi Duan, Sunjae Kwon, Zhichao Yang, Hong Yu |
 *Proceedings of EMNLP 2024 (Findings)* |
 pdfs/ReadMe.pdf
 ---
@@ -74,7 +78,7 @@ __Hieu Tran*__, Minh, Minh Trung Nguyen, Thien Huu Nguyen |
 pdfs/EMNLP_2020.pdf
 ---
 Learning Cross-lingual Representations for Event Coreference Resolution with Multi-view Alignment and Optimal Transport |
-Duy Phung, __Hieu Tran*__, Minh Van Nguyen, Thien Huu Nguyen |
+Duy Phung, __Hieu Tran__, Minh Van Nguyen, Thien Huu Nguyen |
 *Proceedings of the first Workshop on Multilingual Representation Learning (MRL 2021) at EMNLP 2021* |
 https://ieeexplore.ieee.org/iel7/6287639/8948470/09138369.pdf
 " | split: "---" %}
