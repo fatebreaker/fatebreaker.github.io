@@ -39,6 +39,17 @@ __<span>{{ milestone_arr[0] | strip }}</span>__ : *{{ milestone_arr[1] | strip }
 # Publications
 
 {% assign publications = "
+---
+PRIME: Planning and Retrieval-Integrated Memory for Enhanced Reasoning |
+__Hieu Tran*__, Zonghai Yao, Zhichao Yang, Hong Yu |
+*Proceedings of AAAI 2026* |
+pdfs/prime.pdf
+---
+LEAF: Learning and Evaluation Augmented by Fact-Checking to Improve Factualness in Large Language Models |
+__Hieu Tran*__, Junda Wang, Yujan Ting, Hong Yu, Weijing Huang, Terrence Chen |
+*Proceedings of EMNLP 2025 (Industry Track)* |
+pdfs/LEAF.pdf
+---
 Chatbot To Help Patients Understand Their Health |
 Won Seok Jang*, Hieu Tran*, Manav Mistry, SaiKiran Gandluri, Yifan Zhang, Sharmin Sultana, Sunjae Kwon,
 Zonghai Yao, Hong Yu |
