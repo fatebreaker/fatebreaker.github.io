@@ -329,13 +329,7 @@ nav {
 
 //
 // Biography rows
-// Pattern emitted by index.md:
-//   **Date**: *role / description*
 //
-#main p strong + : {
-  // placeholder selector; bio styling lives in .bio below
-}
-
 .bio-row {
   display: grid;
   grid-template-columns: 230px 1fr;

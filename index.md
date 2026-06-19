@@ -90,7 +90,7 @@ The Dots Have Their Values: Exploiting the Node-Edge Connections in Graph-based 
   <div class="pub-authors">{{ p[1] | strip | markdownify | remove: '<p>' | remove: '</p>' }}</div>
   <div class="pub-meta">
     <span class="pub-venue">{{ p[2] | strip }}</span>
-    {% if pdf and pdf != "" %}
+    {% if pdf != blank %}
     <a class="pub-pdf" href="{{ pdf }}" target="_blank" rel="noopener">
       <i class="far fa-file-pdf"></i> PDF
     </a>
