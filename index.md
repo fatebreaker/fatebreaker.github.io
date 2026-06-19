@@ -21,6 +21,7 @@ of LLMs in both general and domain-specific applications.
 ## News
 
 <ul>
+  <li><strong>2026</strong> — <em>Exploiting Tree Structure for Credit Assignment in RL with LLMs</em> accepted to <strong>ACL 2026 (Findings)</strong>.</li>
   <li><strong>Dec 2025</strong> — <em>PRIME</em> accepted to <strong>AAAI 2026</strong>.</li>
   <li><strong>Sep 2025</strong> — <em>LEAF</em> accepted to <strong>EMNLP 2025 (Industry Track)</strong>.</li>
   <li><strong>May 2025</strong> — <em>RARE</em> accepted to <strong>ACL 2025</strong>.</li>
@@ -60,6 +61,8 @@ Aug. 2014 – Jun. 2019 | B.Eng. in Computer Science (Excellence Degree) | Hanoi
 </p>
 
 {% assign publications = "
+Exploiting Tree Structure for Credit Assignment in Reinforcement Learning with Large Language Models | **Hieu Tran**, Zonghai Yao, Hong Yu | ACL 2026 (Findings) |
+---
 PRIME: Planning and Retrieval-Integrated Memory for Enhanced Reasoning | **Hieu Tran***, Zonghai Yao, Zhichao Yang, Hong Yu | AAAI 2026 | pdfs/prime.pdf
 ---
 LEAF: Learning and Evaluation Augmented by Fact-Checking to Improve Factualness in Large Language Models | **Hieu Tran***, Junda Wang, Yujan Ting, Hong Yu, Weijing Huang, Terrence Chen | EMNLP 2025 (Industry Track) | pdfs/LEAF.pdf
@@ -81,14 +84,19 @@ The Dots Have Their Values: Exploiting the Node-Edge Connections in Graph-based 
 
 {% for pub in publications %}
 {% assign p = pub | strip | split: "|" %}
+{% assign pdf = p[3] | strip %}
 <div class="pub">
   <span class="pub-title">{{ p[0] | strip }}</span>
   <div class="pub-authors">{{ p[1] | strip | markdownify | remove: '<p>' | remove: '</p>' }}</div>
   <div class="pub-meta">
     <span class="pub-venue">{{ p[2] | strip }}</span>
-    <a class="pub-pdf" href="{{ p[3] | strip }}" target="_blank" rel="noopener">
+    {% if pdf and pdf != "" %}
+    <a class="pub-pdf" href="{{ pdf }}" target="_blank" rel="noopener">
       <i class="far fa-file-pdf"></i> PDF
     </a>
+    {% else %}
+    <span class="pub-pdf" style="color:#8892a6;"><i class="far fa-clock"></i> Coming soon</span>
+    {% endif %}
   </div>
 </div>
 {% endfor %}
