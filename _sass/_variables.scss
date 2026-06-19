@@ -1,27 +1,46 @@
-
 //
 // VARIABLES
 //
 
-// Colors
-$blue: #4183C4;
+// Brand colors
+$accent: #2f5fa1;          // refined academic blue
+$accentDark: #1f3f6f;
+$accentSoft: #eaf1fb;
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+// Neutrals
+$black:      #0b1320;
+$ink:        #1d2433;       // primary text
+$muted:      #555f73;       // secondary text
+$soft:       #8892a6;       // tertiary text
+$line:       #e6eaf0;       // hairline borders
+$panel:      #f6f8fb;       // subtle surfaces
+$white:      #ffffff;
+
+// Legacy aliases kept for older partials / posts
+$blue:       $accent;
+$darkerGray: $ink;
+$darkGray:   $ink;
+$gray:       $muted;
+$lightGray:  $line;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$sans:        "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$serif:       "Newsreader", "Source Serif Pro", Georgia, "Times New Roman", serif;
+$mono:        "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+
+$helvetica:    $sans;
+$helveticaNeue:$sans;
+$georgia:      $serif;
 
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 880px) {
     @content;
   }
 }

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     {% seo title=false %}
     {% include meta.html %}
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#2f5fa1">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/avatar.jpg">
     {% include analytics_head.html %}
 
@@ -37,18 +38,49 @@
               <a href="{{ site.baseurl }}/archive">Archive</a>
             </nav>
 
-            <div class='avatar-block'>
-              <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
+            <div class="avatar-block">
+              <a href="{{ site.baseurl }}/" class="site-avatar">
+                <img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.name }}" />
+              </a>
               <div class="site-info">
                 <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-                <p class="site-description">{{ site.description }}</p> 
+                <p class="site-description">{{ site.description }}</p>
 
-                <a class="author-info" href='{{ site.author-info.google_scholar.url }}'> {{ site.author-info.google_scholar.text }}</a> -
-                <a class="author-info" href='{{ site.author-info.linkedin.url }}'> {{ site.author-info.linkedin.text }}</a> -
-                <a class="author-info" href='{{ site.author-info.cv.url }}'> {{ site.author-info.cv.text }}</a>
+                <div class="author-links">
+                  {% if site.author-info.google_scholar %}
+                  <a class="author-info" href="{{ site.author-info.google_scholar.url }}" target="_blank" rel="noopener">
+                    <i class="{{ site.author-info.google_scholar.icon }}"></i>{{ site.author-info.google_scholar.text }}
+                  </a>
+                  {% endif %}
+                  {% if site.author-info.linkedin %}
+                  <a class="author-info" href="{{ site.author-info.linkedin.url }}" target="_blank" rel="noopener">
+                    <i class="{{ site.author-info.linkedin.icon }}"></i>{{ site.author-info.linkedin.text }}
+                  </a>
+                  {% endif %}
+                  {% if site.footer-links.github %}
+                  <a class="author-info" href="https://github.com/{{ site.footer-links.github }}" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>GitHub
+                  </a>
+                  {% endif %}
+                  {% if site.footer-links.twitter %}
+                  <a class="author-info" href="https://twitter.com/{{ site.footer-links.twitter }}" target="_blank" rel="noopener">
+                    <i class="fab fa-x-twitter"></i>Twitter
+                  </a>
+                  {% endif %}
+                  {% if site.footer-links.email %}
+                  <a class="author-info" href="mailto:{{ site.footer-links.email }}">
+                    <i class="far fa-envelope"></i>Email
+                  </a>
+                  {% endif %}
+                  {% if site.author-info.cv %}
+                  <a class="author-info" href="{{ site.author-info.cv.url }}" target="_blank" rel="noopener">
+                    <i class="far fa-file-lines"></i>{{ site.author-info.cv.text }}
+                  </a>
+                  {% endif %}
+                </div>
               </div>
             </div>
-            
+
           </header>
         </div>
       </div>
@@ -63,6 +95,7 @@
         <div class="container">
           <footer class="footer">
             {% include svg-icons.html %}
+            <div class="footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.name }}. All rights reserved.</div>
           </footer>
         </div>
       </div>
