@@ -10,16 +10,13 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
-    <meta name="theme-color" content="#2f5fa1">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/avatar.jpg">
+    <meta name="theme-color" content="#8a2a2a">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon-32x32.png">
     {% include analytics_head.html %}
 
-    <!-- for mathjax support -->
     {% if page.usemathjax %}
     <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-        TeX: { equationNumbers: { autoNumber: "AMS" } }
-        });
+        MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });
     </script>
     <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {% endif %}
@@ -47,35 +44,23 @@
                 <p class="site-description">{{ site.description }}</p>
 
                 <div class="author-links">
-                  {% if site.author-info.google_scholar %}
-                  <a class="author-info" href="{{ site.author-info.google_scholar.url }}" target="_blank" rel="noopener">
-                    <i class="{{ site.author-info.google_scholar.icon }}"></i>{{ site.author-info.google_scholar.text }}
-                  </a>
+                  {% if site.footer-links.email %}
+                  <a class="author-info" href="mailto:{{ site.footer-links.email }}">Email</a>
                   {% endif %}
-                  {% if site.author-info.linkedin %}
-                  <a class="author-info" href="{{ site.author-info.linkedin.url }}" target="_blank" rel="noopener">
-                    <i class="{{ site.author-info.linkedin.icon }}"></i>{{ site.author-info.linkedin.text }}
-                  </a>
+                  {% if site.author-info.google_scholar %}
+                  <a class="author-info" href="{{ site.author-info.google_scholar.url }}" target="_blank" rel="noopener">Google Scholar</a>
                   {% endif %}
                   {% if site.footer-links.github %}
-                  <a class="author-info" href="https://github.com/{{ site.footer-links.github }}" target="_blank" rel="noopener">
-                    <i class="fab fa-github"></i>GitHub
-                  </a>
+                  <a class="author-info" href="https://github.com/{{ site.footer-links.github }}" target="_blank" rel="noopener">GitHub</a>
+                  {% endif %}
+                  {% if site.author-info.linkedin %}
+                  <a class="author-info" href="{{ site.author-info.linkedin.url }}" target="_blank" rel="noopener">LinkedIn</a>
                   {% endif %}
                   {% if site.footer-links.twitter %}
-                  <a class="author-info" href="https://twitter.com/{{ site.footer-links.twitter }}" target="_blank" rel="noopener">
-                    <i class="fab fa-x-twitter"></i>Twitter
-                  </a>
-                  {% endif %}
-                  {% if site.footer-links.email %}
-                  <a class="author-info" href="mailto:{{ site.footer-links.email }}">
-                    <i class="far fa-envelope"></i>Email
-                  </a>
+                  <a class="author-info" href="https://twitter.com/{{ site.footer-links.twitter }}" target="_blank" rel="noopener">Twitter</a>
                   {% endif %}
                   {% if site.author-info.cv %}
-                  <a class="author-info" href="{{ site.author-info.cv.url }}" target="_blank" rel="noopener">
-                    <i class="far fa-file-lines"></i>{{ site.author-info.cv.text }}
-                  </a>
+                  <a class="author-info" href="{{ site.author-info.cv.url }}" target="_blank" rel="noopener">CV</a>
                   {% endif %}
                 </div>
               </div>
@@ -94,8 +79,7 @@
       <div class="wrapper-footer">
         <div class="container">
           <footer class="footer">
-            {% include svg-icons.html %}
-            <div class="footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.name }}. All rights reserved.</div>
+            <div class="footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.name }} · Last updated {{ site.time | date: '%b %Y' }}</div>
           </footer>
         </div>
       </div>
