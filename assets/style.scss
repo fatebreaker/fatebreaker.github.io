@@ -359,18 +359,13 @@ nav {
     font-size: 14.5px;
   }
 
-  .pub-pdf {
+  .pub-link {
     color: $accent;
-    font-size: 13.5px;
+    font-family: $mono;
+    font-size: 13px;
     font-weight: 500;
     border-bottom: 1px solid transparent;
     &:hover { border-bottom-color: $accent; color: $accentDark; }
-  }
-
-  .pub-pdf.pub-pdf--pending {
-    color: $soft;
-    font-style: italic;
-    border-bottom: none;
   }
 
   @include mobile {
